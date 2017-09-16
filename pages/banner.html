@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="./static/css/banner.css">
+
+<script type="text/javascript" src="./static/js/banner.js"></script>
+
+<table id="banner" class="easyui-datagrid" style="padding: 10px;"> 
+ </table>
+
+    <div id="banner-tb">
+
+       
+     	<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" plain="true" id="banner-add">添加</a>
+
+		<!--<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-edit" plain="true" id="banner-edit">修改</a>		-->
+    </div>  
+ 
+  <form id="banner-addOrEdit" class="formbox" >
+	 <div class="layui-form">
+	 <div class="layui-form-item">
+    <label class="layui-form-label">轮播图组标题</label>
+    <div class="layui-input-block">
+      <input type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+    </div>
+    </div>
+ 
+  <div class="layui-form-item">  
+    <label class="layui-form-label"><button type="button" class="layui-btn" id="imgUpload">上传图片</button>
+    </label>
+     <div class="layui-input-block">    
+        <div class="layui-upload-list" id="imgPre"></div>
+     </div>
+  </div>
+  
+  <div class="layui-form-item">
+    <label class="layui-form-label">是否显示</label>
+    <div class="layui-input-block">
+      <input type="checkbox" name="switch" lay-skin="switch" checked>
+    </div>
+  </div>
+
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+  </div>
+</form>

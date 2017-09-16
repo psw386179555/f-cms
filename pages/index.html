@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>智慧工厂</title>
+
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="./static/easyui/themes/default/easyui.css">
+
+    <link rel="stylesheet" type="text/css" href="./static/easyui/themes/icon.css">
+
+    <link rel="stylesheet" type="text/css" href="./static/easyui/demo/demo.css">
+
+    <link rel="stylesheet" type="text/css" href="./static/js/layui/css/layui.css">
+
+    <script type="text/javascript" src="./static/easyui/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./static/easyui/jquery.easyui.min.js"></script>
+
+    <script type="text/javascript" src="./static/easyui/locale/easyui-lang-zh_CN.js"></script>
+
+    <script type="text/javascript" src="./static/js/common.js"></script>
+
+    <script type="text/javascript" src="./static/js/index.js"></script>
+
+    <script type="text/javascript" src="./static/js/layui/layui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./static/css/index.css">
+
+</head>
+<body class="easyui-layout">
+
+    <div region="north" style="height: 80px;background-color:#E0ECFF">
+        <div style="float:left;padding-left: 50px;font-size: 30px;line-height:70px;height: 70px ">
+            智慧工厂后台管理v0.1
+            <!--<img width="80px;" height="60px;" src="./static/img/logo.png">-->
+        </div>
+        <div style="float:right;padding:10px;">
+            <div class="left-box">
+                <a class="easyui-linkbutton" id="login-out" plain="true" title="退出">退出</a>
+            </div>
+        </div>
+    </div>
+    <div region="center" onscroll="false">
+        <div class="easyui-tabs" fit="true" border="false" id="tabs">
+            <div title="首页" style="padding: 10px">
+                <blockquote class="layui-elem-quote title">系统基本参数</blockquote>
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="150">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <td>当前版本</td>
+                        <td class="version">v0.1</td>
+                    </tr>
+                    <tr>
+                        <td>开发作者</td>
+                        <td class="author">SvenBarnett（彭思文）</td>
+                    </tr>
+                    <tr>
+                        <td>作者联系方式</td>
+                        <td class="author">QQ：386179555</td>
+                    </tr>
+                    <tr>
+                        <td>网站首页</td>
+                        <td class="homePage"><a href="https://www.svenbarnett.cn/" target="_blank">https://www.svenbarnett.cn</a></td>
+                    </tr>
+                    <tr>
+                        <td>服务器环境</td>
+                        <td class="server">Linux</td>
+                    </tr>
+                    <tr>
+                        <td>最大上传限制</td>
+                        <td class="maxUpload">5M</td>
+                    </tr>
+                    <tr>
+                        <td>当前用户权限</td>
+                        <td class="userRights">管理员</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>           
+        </div>
+    </div>
+    <div region="west" style="width: 200px;padding:15px;" title="导航菜单" split="true">
+        <ul id="tree"></ul>
+    </div>
+    <div region="south" style="height: 25px;" align="center">版权所有 www.svenbarnett.cn</div>
+
+
+    <script type="text/javascript" charset="utf-8" src="https://www.v5kf.com/149588/v5kf.js?style=8"></script>
+
+
+
+</body>
+</html>

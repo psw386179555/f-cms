@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="069042bd-df08-4ea3-8447-69253e325cb7" name="Cms" url="http://139.196.73.244">
+        <fileTransfer host="139.196.73.244" port="22" privateKey="C:\139wdcp_sshkey (2).ppk" rootFolder="/www/web/admin/public_html" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="./static/css/company.css">
+
+<script type="text/javascript" src="./static/js/company.js"></script>
+
+
+ <table id="company" class="easyui-datagrid" style="padding: 10px;"> 
+ </table>
+
+    <div id="company-tb">   
+        当前状态：    
+        <select id="company-status" class="easyui-combobox" name="status">
+            <option value="" selected>所有</option>
+            <option value="2">认证通过</option>
+            <option value="0">认证不通过</option>
+            <option value="1">待审核</option>
+        </select>
+
+        <input id="company-searchbox" class="easyui-searchbox" style="width:150px;height: 28px;" />
+            
+        <!--<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-edit" plain="true" id="company-edit">修改</a>-->
+        <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-check" plain="true" id="company-check">通过</a>
+        <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-uncheck" plain="true" id="company-uncheck">不通过</a>
+    </div>  
+ 
+
+        <form id="company-edit">
+            <table cellpadding="5">
+                <tr style="display: none;">                 
+                    <td><input class="easyui-textbox" type="text" name="id" id="id"/></td>
+                </tr>
+                <tr>
+                    <td>姓名:</td>
+                    <td><input class="easyui-textbox" type="text" name="name" id="name"/></td>
+                </tr>
+                <tr>
+                    <td>公司:</td>
+                    <td><input class="easyui-textbox" type="text" name="beco" id="beco"/></td>
+                </tr>
+                <tr>
+                    <td>职位:</td>
+                    <td><input class="easyui-textbox" type="text" name="duty" id="duty"/></td>
+                </tr>
+                <tr>
+                    <td>联系方式:</td>
+                    <td><input class="easyui-numberbox" name="phone" id="phone"/></td>
+                </tr>               
+            </table>
+        </form>

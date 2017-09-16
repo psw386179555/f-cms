@@ -1,0 +1,12 @@
+.formbox{
+	padding: 10px 50px 10px 10px!important;
+}
+.prebox{
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.prebox img{
+	width: 200px;
+	height: 100px!important;
+}

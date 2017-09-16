@@ -1,0 +1,48 @@
+<link rel="stylesheet" type="text/css" href="./static/css/apply.css">
+
+<script type="text/javascript" src="./static/js/apply.js"></script>
+
+
+ <table id="apply" class="easyui-datagrid" style="padding: 10px;"> 
+ </table>
+
+    <div id="apply-tb">   
+		当前状态：    
+		<select id="apply-status" class="easyui-combobox" name="status">
+        	<option value="" selected>所有</option>
+        	<option value="2">审核通过</option>
+        	<option value="0">审核不通过</option>
+        	<option value="1">待审核</option>
+    	</select>
+
+        <input id="apply-searchbox" class="easyui-searchbox" style="width:150px;height: 28px;" />
+            
+		<!--<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-edit" plain="true" id="apply-edit">修改</a>-->
+		<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-check" plain="true" id="apply-check">通过</a>
+		<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-uncheck" plain="true" id="apply-uncheck">不通过</a>
+    </div>  
+ 
+
+	    <form id="apply-edit">
+	    	<table cellpadding="5">
+	    		<tr style="display: none;">	    			
+	    			<td><input class="easyui-textbox" type="text" name="id" id="id"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td>姓名:</td>
+	    			<td><input class="easyui-textbox" type="text" name="name" id="name"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td>公司:</td>
+	    			<td><input class="easyui-textbox" type="text" name="beco" id="beco"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td>职位:</td>
+	    			<td><input class="easyui-textbox" type="text" name="duty" id="duty"/></td>
+	    		</tr>
+	    		<tr>
+	    			<td>联系方式:</td>
+	    			<td><input class="easyui-numberbox" name="phone" id="phone"/></td>
+	    		</tr>	    		
+	    	</table>
+	    </form>

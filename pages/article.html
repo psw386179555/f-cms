@@ -1,0 +1,94 @@
+<link rel="stylesheet" type="text/css" href="./static/css/article.css">
+
+<script type="text/javascript" src="./static/js/article.js"></script>
+
+
+ <table id="article" class="easyui-datagrid" style="padding: 10px;"> 
+ </table>
+
+    <div id="article-tb">   
+        当前状态：    
+        <select id="article-status" class="easyui-combobox" name="status">
+            <option value="" selected>所有</option>       
+            <option value="0">不显示</option>
+            <option value="1">显示</option>
+        </select>
+
+        <input id="article-searchbox" class="easyui-searchbox" style="width:150px;height: 28px;" />
+        <a href="javascript:;" class="easyui-linkbutton" iconCls="icon-add" plain="true" id="article-add">添加</a>   
+        <!--<a href="javascript:;" class="easyui-linkbutton" iconCls="icon-edit" plain="true" id="article-edit">修改</a>       -->
+    </div>  
+ 
+
+        <form id="article-addOrEdit" class="formbox">  
+        <div class="layui-form">      
+              <div class="layui-form-item">
+                <label class="layui-form-label">文章标题</label>
+                <div class="layui-input-block">
+                  <input type="text" name="title" placeholder="请输入" required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+
+              <div class="layui-form-item">
+                <label class="layui-form-label">作者</label>
+                <div class="layui-input-inline">
+                  <input type="text" name="author" placeholder="请输入" required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+
+              <div class="layui-form-item">
+                <label class="layui-form-label">关键词</label>
+                <div class="layui-input-block">
+                  <input type="text" name="keyword" placeholder="请输入"  required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+              </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">简要内容</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="sum" placeholder="请输入" required  lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+              <div class="layui-form-item">
+              <label class="layui-form-label">上传封面图片</label>
+               <div class="layui-input-inline">
+                <button type="button" class="layui-btn" id="photo-upload">
+                <i class="layui-icon">&#xe67c;</i>选择图片
+                </button>
+                   <div class="layui-upload-list" id="imgPre"></div>
+                </div>
+
+                </div>
+
+              <div class="layui-form-item">
+                <label class="layui-form-label">文章类型</label>
+                <div class="layui-input-block">
+                  <select name="type">
+                    <option value="0">资讯</option>
+                    <option value="1">案例</option>
+                     <option value="2">产品</option>
+                    <option value="3">通知</option>
+                  </select>
+                </div>
+              </div>
+                       
+              <div class="layui-form-item">
+                <label class="layui-form-label">是否显示</label>
+                <div class="layui-input-block">
+                  <input type="checkbox" name="status" checked lay-skin="switch">
+                </div>
+              </div>
+              
+              <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">文章内容：</label>
+                <div class="layui-input-block">
+                  <textarea id="editor" name="content" placeholder="请输入内容" required  lay-verify="required" class="layui-textarea"></textarea>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-block">
+                  <button class="layui-btn" lay-submit lay-filter="formSubmit">立即提交</button>
+                  <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+              </div>
+              </div>
+        </form>
